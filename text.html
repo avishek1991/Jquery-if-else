@@ -1,0 +1,40 @@
+<html>
+<head>
+<script src="C:\Users\avishek\Desktop\ALL JA & CSS\jquery-3.3.1.js"></script>
+<script >
+$(document).ready(function(){
+			var age=20;
+ 
+        $('.but').click(function(e){
+       var h = $('.input').val();
+      if(h===''){
+      $('.text').text('please fill the field')
+       } 
+	   else if( h > age){
+		$('.text').text('you are able to drive')
+       }
+	   
+	   else if(h == age){
+      $('.text').text('you are 20 able to drive')
+       }
+	   else if(h < age){
+      $('.text').text('you are not able to drive')
+       }
+	  
+	  else{
+    $('.text').text('please fill the field with number')
+     }
+  })
+
+})
+</script>
+<style>
+
+</style>
+</head>
+<body>
+<input type="text" value="" class="input">
+<input type="button" class="but" value="submit"/>
+<p class="text"></p>
+</body>
+</html>
